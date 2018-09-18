@@ -344,20 +344,20 @@ function renderDock () {
   return yo`
     <div class="dock-wrapper">
       <div class="dock">
-        <a class="dock-item" href="beaker://settings">
-          Settings
+        <a class="dock-item subtitle-heading" href="beaker://settings">
+          设置
         </a>
 
-        <a class="dock-item" href="beaker://history">
-          History
+        <a class="dock-item subtitle-heading" href="beaker://history">
+          历史
         </a>
 
-        <a class="dock-item" href="beaker://bookmarks">
-          Bookmarks
+        <a class="dock-item subtitle-heading" href="beaker://bookmarks">
+          书签
         </a>
 
-        <a class="dock-item" href="beaker://library">
-          Library
+        <a class="dock-item subtitle-heading" href="beaker://library">
+          Lib
         </a>
 
         <span class="dock-separator">|</span>
@@ -375,7 +375,7 @@ function renderPinnedBookmarks () {
     <div class="pinned-bookmarks-container">
       ${pinnedBookmarks.length ? yo`
         <h2 class="subtitle-heading">
-          <span>Pinned bookmarks</span>
+          <span>固定书签</span>
           <button class="btn transparent add-pinned-btn" data-tooltip="Add pinned bookmark" onclick=${onClickAddBookmark}>
             <i class="fa fa-plus"></i>
           </button>
